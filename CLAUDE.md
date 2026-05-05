@@ -60,8 +60,9 @@ Website:  www.alanbau.de
 HRB:      251074 B · Amtsgericht Berlin-Charlottenburg
 USt-ID:   DE 360360535
 Kammer:   IHK Cottbus
-LinkedIn: https://www.linkedin.com/company/alan-consulting-bau-projektmanagement-gmbh/
-XING:     https://www.xing.com/pages/alan-projektmanagement-gmbh/about_us
+LinkedIn:  https://www.linkedin.com/company/alan-consulting-bau-projektmanagement-gmbh/
+XING:      https://www.xing.com/pages/alan-projektmanagement-gmbh/about_us
+Instagram: https://www.instagram.com/alaninteriordesign/
 ```
 
 ---
@@ -117,9 +118,9 @@ Alle internen Links: relative Pfade (`./leistungen.html` etc.) — Logo → `./i
 | agb.html | ✅ Clean |
 | blog/ | ✅ PHP-Blog mit index, Artikel, 5 Themen-Seiten, RSS-Feed |
 | sitemap.xml | ✅ 22 Einträge |
-| assets/css/main.css | ✅ Vollständig (~2350 Zeilen) |
+| assets/css/main.css | ✅ Vollständig (~2360 Zeilen) |
 | assets/js/main.js | ✅ Vollständig |
-| assets/js/i18n.js | ✅ DE/EN inline, 200+ Keys |
+| assets/js/i18n.js | ✅ DE/EN inline, 220+ Keys |
 
 ### Noch offen (Client-Aufgaben)
 - [ ] Web3Forms-Key eintragen (index.html, leistungen.html, karriere.html, ueber-uns.html)

@@ -125,6 +125,48 @@ Neue Key-Gruppen:
 
 ---
 
+## Erledigte Tasks (Session 5)
+
+### 14. i18n — karriere.html Benefits-Karten-Texte fehlten
+- 6 `feature-card-text` Paragraphen hatten kein `data-i18n` Attribut
+- 12 neue Keys ergänzt (DE + EN: `karriere.benefit1–6.text`)
+
+### 15. Bildschärfe-Fixes — Pixeligkeit bei Retina-Displays (3×)
+Ursache: Container-Aspect-Ratio erzwang Hochskalierung über native Auflösung
+
+| Datei | Element | Fix |
+|---|---|---|
+| nachhaltigkeit.html | `.content-img-wrap` (nachhaltiges-bauen.jpg 1024×1024) | `style="aspect-ratio:1/1"` |
+| index.html | `.about-img-wrap` (besprechungsraum.jpg 1200×543) | `style="aspect-ratio:20/9"`, `width/height` korrigiert |
+| ueber-uns.html | `.content-img-wrap` (besprechungsraum.jpg) | `style="aspect-ratio:20/9"` |
+| ueber-uns.html | `.about-img-wrap` (gebaeude.jpg 1200×849) | `style="aspect-ratio:1200/849"`, Grid-Spalte `400px` |
+| ueber-uns.html | `.management-card` (bueroraum.jpg 1200×799) | Wrapper-div `aspect-ratio:3/2`, Grid-Spalte `380px` |
+| ueber-uns.html | Lightbox `#lightbox-img` | `max-width: min(400px, 90vw)` — scharf auf 3× |
+| ueber-uns.html | Galerie-Thumbnails (3 Bilder) | HTML `width/height` auf native Werte korrigiert |
+
+### 16. Navbar & Footer — Logo-Größe & Nav-Schrift erhöht (main.css)
+- Logo-Höhe: `48px` → `64px`
+- Nav-Schrift: `14px` → `16px`
+- Nav-Gap: `36px` → `44px`
+
+### 17. Logo auf dunklen Hintergründen (Navbar transparent + Footer)
+- **Navbar (nicht gescrollt):** `filter: invert(1) hue-rotate(180deg)` — schwarzer Text wird weiß, Rot/Grau des A-Symbols bleibt erhalten
+- **Footer:** gleicher Filter dauerhaft
+- Beim Scrollen (weißer Hintergrund): Filter entfernt → Originalfarben
+
+### 18. Instagram hinzugefügt — alle 15 HTML-Dateien
+- URL: `https://www.instagram.com/alaninteriordesign/`
+- Footer-Social-Button (📷-Emoji) auf allen Seiten
+- Textlink „LinkedIn · XING · Instagram" in index.html Kontaktbereich + ueber-uns.html
+- JSON-LD `sameAs` in index.html ergänzt
+
+### 19. GitHub-Push
+- Repo: `https://github.com/zvkp8vxc7h-lgtm/website-Malanbau`
+- 105 Dateien committed und force-gepusht (`main` Branch)
+- `.gitignore` ergänzt: `alle bilder für alanbau website/`, `.planning/`
+
+---
+
 ## Noch offene Übersetzungslücken — NÄCHSTE SESSION
 
 ### ueber-uns.html — ✅ ERLEDIGT (Session 4)
