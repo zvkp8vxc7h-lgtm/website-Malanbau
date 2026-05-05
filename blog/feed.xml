@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ALANBAU Blog — Bau-Projektmanagement &amp; Bauwissen</title>
+    <link>https://www.alanbau.de/blog/</link>
+    <description>Fachwissen, Einblicke und Aktuelles aus dem Bereich Bau-Projektmanagement, Hoch- &amp; Tiefbau und Nachhaltiges Bauen.</description>
+    <language>de</language>
+    <copyright>Alan Projektmanagement GmbH</copyright>
+    <managingEditor>info@alanprojekt.de (Alan Projektmanagement GmbH)</managingEditor>
+    <lastBuildDate>Sat, 03 May 2026 12:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.alanbau.de/blog/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Bau-Projektmanagement Berlin: Was macht ein guter Projektsteuerer?</title>
+      <link>https://www.alanbau.de/blog/artikel/demo-bauprojektmanagement-berlin.php</link>
+      <description>Erfahren Sie, welche Aufgaben ein Bau-Projektsteuerer in Berlin übernimmt und warum professionelles Projektmanagement &amp; Projektsteuerung den Unterschied zwischen Erfolg und Verzögerung macht.</description>
+      <pubDate>Sat, 03 May 2026 10:00:00 +0200</pubDate>
+      <guid isPermaLink="true">https://www.alanbau.de/blog/artikel/demo-bauprojektmanagement-berlin.php</guid>
+      <author>info@alanprojekt.de (Alan Projektmanagement GmbH)</author>
+      <category>Bau-Projektmanagement</category>
+    </item>
+  </channel>
+</rss>

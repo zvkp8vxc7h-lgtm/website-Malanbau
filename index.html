@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Security -->
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <!-- SEO -->
+  <title>ALANBAU — Bau-Projektmanagement · Hoch- & Tiefbau · Berlin & Brandenburg</title>
+  <meta name="description" content="Alan Projektmanagement GmbH — Ihr Partner für Bau-Projektmanagement, Hoch- & Tiefbau und Baudienstleistungen in Berlin, Schönefeld und deutschlandweit. Vom Konzept bis zur Übergabe.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.alanbau.de/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.alanbau.de/">
+  <meta property="og:title"       content="ALANBAU — Bau-Projektmanagement · Hoch- & Tiefbau · Berlin">
+  <meta property="og:description" content="Ihr Partner für Bau-Projektmanagement, Hoch- & Tiefbau und Baudienstleistungen. Qualität aus Überzeugung — vom Konzept bis zur Übergabe.">
+  <meta property="og:image"       content="https://www.alanbau.de/assets/images/bauprojekt.jpg">
+  <meta property="og:locale"      content="de_DE">
+
+  <!-- LCP Preload: hero video poster -->
+  <link rel="preload" as="image" href="./assets/images/bauprojekt.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="./assets/images/bauprojekt.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Alan Projektmanagement GmbH",
+    "alternateName": "ALANBAU",
+    "description": "Bau-Projektmanagement, Hoch- & Tiefbau und Baudienstleistungen in Berlin und Brandenburg. Vom Konzept bis zur Übergabe.",
+    "url": "https://www.alanbau.de",
+    "logo": "https://www.alanbau.de/assets/images/company-logo.png",
+    "image": "https://www.alanbau.de/assets/images/bauprojekt.jpg",
+    "telephone": "+4930258141642",
+    "email": "info@alanprojekt.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Willy-Brandt-Platz 2",
+      "postalCode": "12529",
+      "addressLocality": "Schönefeld",
+      "addressRegion": "Brandenburg",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.3804,
+      "longitude": 13.5210
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Berlin" },
+      { "@type": "State", "name": "Brandenburg" }
+    ],
+    "priceRange": "€€€",
+    "sameAs": [
+      "https://www.linkedin.com/company/alan-consulting-bau-projektmanagement-gmbh/",
+      "https://www.xing.com/pages/alan-projektmanagement-gmbh/about_us",
+      "https://www.instagram.com/alaninteriordesign/"
+    ]
+  }
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="ALANBAU Blog" href="/blog/feed.xml">
+</head>
+<body>
+
+  <!-- ═══════════════════════════ COOKIE BANNER ═══════════════════════════ -->
+  <div class="cookie-banner" id="cookie-banner" style="display:none" role="dialog" aria-label="Cookie-Einstellungen">
+    <p class="cookie-text">
+      Wir verwenden Cookies, um Ihr Erlebnis zu verbessern.
+      Mehr dazu in unserer <a href="./datenschutz.html">Datenschutzerklärung</a>.
+    </p>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-btn--decline" id="cookie-decline" data-i18n="cookie.decline">Ablehnen</button>
+      <button class="cookie-btn cookie-btn--accept"  id="cookie-accept" data-i18n="cookie.accept">Akzeptieren</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ MOBILE OVERLAY ═══════════════════════════ -->
+  <div class="nav-mobile-overlay" id="mobile-overlay" role="navigation" aria-label="Mobile Navigation">
+    <button class="nav-mobile-close" id="mobile-close" aria-label="Menü schließen">&#x2715;</button>
+    <a href="#services" data-i18n="nav.leistungen">Leistungen</a>
+    <a href="#projects" data-i18n="nav.projekte">Projekte</a>
+    <a href="./ueber-uns.html" data-i18n="nav.unternehmen">Unternehmen</a>
+    <a href="./karriere.html" data-i18n="nav.karriere">Karriere</a>
+    <a href="#contact" data-i18n="nav.kontakt">Kontakt</a>
+    <div class="lang-toggle lang-toggle--mobile" aria-label="Sprache wechseln">
+      <button class="lang-btn lang-active" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-sep" aria-hidden="true">|</span>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Hauptnavigation">
+    <a href="./index.html" class="nav-logo" aria-label="ALANBAU — Startseite">
+      <img src="./assets/images/company-logo.png" alt="Alan Projektmanagement GmbH" width="48" height="48">
+      <span class="nav-logo-text" style="display:none">ALAN<span class="red">BAU</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#services" data-i18n="nav.leistungen">Leistungen</a></li>
+      <li><a href="#projects" data-i18n="nav.projekte">Projekte</a></li>
+      <li><a href="./ueber-uns.html" data-i18n="nav.unternehmen">Unternehmen</a></li>
+      <li><a href="./karriere.html" data-i18n="nav.karriere">Karriere</a></li>
+      <li><a href="#contact" data-i18n="nav.kontakt">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" aria-label="Sprache wechseln">
+        <button class="lang-btn lang-active" data-lang="de" aria-pressed="true">DE</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="btn-primary" data-scroll-to="contact" aria-label="Projektanfrage stellen" data-i18n="nav.cta">
+        Anfrage stellen →
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-overlay">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+    <video class="hero-bg" autoplay loop muted playsinline aria-hidden="true" poster="./assets/images/bauprojekt.jpg">
+      <source src="./assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-gradient" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" id="hero-eyebrow" data-i18n="hero.eyebrow">BERLIN · SCHÖNEFELD · DEUTSCHLANDWEIT</p>
+
+      <h1 class="hero-title" id="hero-title" data-i18n-html="hero.title">
+        Planen.<br>
+        <span class="red">Bauen.</span><br>
+        Betreiben.
+      </h1>
+
+      <p class="hero-sub" id="hero-sub" data-i18n="hero.sub">
+        Ihr Partner für Bau-Projektmanagement, Hoch- und Tiefbau sowie schlüsselfertige Bauausführung — vom Konzept bis zur Übergabe. Qualität, die besteht.
+      </p>
+
+      <div class="hero-ctas" id="hero-ctas">
+        <button class="btn-hero" data-scroll-to="services" data-i18n-html="hero.cta.leistungen">
+          Unsere Leistungen <span class="arrow">→</span>
+        </button>
+        <button class="btn-ghost" data-scroll-to="projects" data-i18n="hero.cta.projekte">
+          Projekte ansehen
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ STATS STRIP ═══════════════════════════ -->
+  <!-- CLIENT-AUFGABE: Zahlenwerte mit Kunden abstimmen (data-target Attribute) -->
+  <section id="stats-strip" aria-label="Kennzahlen">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-target="10" data-suffix="+">0</span>
+          <span class="stat-label" data-i18n="stats.years.label">Jahre Erfahrung</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="120" data-suffix="+">0</span>
+          <span class="stat-label" data-i18n="stats.projects.label">Realisierte Projekte</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="25" data-suffix="+">0</span>
+          <span class="stat-label" data-i18n="stats.team.label">Mitarbeiter</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label" data-i18n="stats.quality.label">Kernleistungen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+  <section id="services" class="section" aria-labelledby="services-title">
+    <div class="container">
+      <div class="services-header">
+        <p class="section-label" data-i18n="services.label">Unsere Leistungen</p>
+        <h2 class="section-title" id="services-title" data-i18n-html="services.title">
+          Projektmanagement.<br>Hoch- &amp; Tiefbau.<br>Baudienstleistungen.
+        </h2>
+        <p class="section-sub" data-i18n="services.sub">
+          Von der Planung bis zur schlüsselfertigen Übergabe — wir steuern, bauen und beraten mit ingenieurtechnischer Exzellenz für institutionelle Investoren und anspruchsvolle Privatkunden.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="service-card tilt-card reveal" data-service="projektmanagement" role="button" tabindex="0" aria-label="Mehr zu Bau-Projektmanagement">
+          <p class="service-num">01</p>
+          <span class="service-icon" aria-hidden="true">🏗️</span>
+          <h3 class="service-name" data-i18n="services.card1.title">Bau-Projektmanagement</h3>
+          <p class="service-desc" data-i18n="services.card1.desc">
+            Ganzheitliche Steuerung komplexer Bauprojekte nach AHO-Standard — von der Konzeption über die Planung bis zur termingerechten Abnahme.
+          </p>
+          <a href="./leistungen.html#projektmanagement" class="service-link" data-no-modal data-i18n-html="services.card1.link">Mehr erfahren <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card tilt-card reveal" data-service="hochtiefbau" role="button" tabindex="0" aria-label="Mehr zu Hoch- und Tiefbau">
+          <p class="service-num">02</p>
+          <span class="service-icon" aria-hidden="true">🏢</span>
+          <h3 class="service-name" data-i18n="services.card2.title">Hoch- &amp; Tiefbau</h3>
+          <p class="service-desc" data-i18n="services.card2.desc">
+            Schlüsselfertige Bauausführung auf höchstem Niveau — Wohnungsbau, Gewerbebau, Tiefbau und Erschließungsmaßnahmen in Berlin und Brandenburg.
+          </p>
+          <a href="./leistungen.html#hochtiefbau" class="service-link" data-no-modal data-i18n-html="services.card2.link">Mehr erfahren <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card tilt-card reveal" data-service="baudienstleistungen" role="button" tabindex="0" aria-label="Mehr zu Baudienstleistungen">
+          <p class="service-num">03</p>
+          <span class="service-icon" aria-hidden="true">🔧</span>
+          <h3 class="service-name" data-i18n="services.card3.title">Baudienstleistungen</h3>
+          <p class="service-desc" data-i18n="services.card3.desc">
+            Umfassende Dienstleistungen rund ums Bauen — von der Ausschreibung über den Ausbau bis zur Materialbeschaffung aus einer Hand.
+          </p>
+          <a href="./leistungen.html#baudienstleistungen" class="service-link" data-no-modal data-i18n-html="services.card3.link">Mehr erfahren <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJEKTPHASE INFOGRAFIK ═══════════════════════════ -->
+  <section id="projektphasen" aria-labelledby="projektphasen-title">
+    <div class="container">
+      <div class="infografik-wrap reveal">
+        <h2 class="section-title" id="projektphasen-title" data-i18n="index.projektphasen.title">Projektphase</h2>
+        <picture>
+          <source srcset="./assets/images/projektphase-infografik.webp" type="image/webp">
+          <img class="infografik-img" src="./assets/images/projektphase-infografik.jpg" alt="Übersicht der Projektphasen: Beratung, Projektmanagement und Baumanagement über Vorprojektphase, Projektinitiierung, Planung, Umsetzung und Finalisierung" width="1270" height="674" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ BERATUNG ═══════════════════════════ -->
+  <section class="section" id="beratung" aria-labelledby="beratung-title">
+    <div class="container">
+      <div class="content-split reveal">
+        <div>
+          <p class="section-label" data-i18n="index.beratung.label">Beratung</p>
+          <h2 class="content-title" id="beratung-title" data-i18n="index.beratung.title">Der Startpunkt eines Bauprojekts ist eine Idee.</h2>
+          <div class="content-body">
+            <p data-i18n="index.beratung.p1">Wir nehmen diese Idee auf und arbeiten gemeinsam mit Ihnen an einer maßgeschneiderten Strategie für Ihr Projekt.</p>
+            <p data-i18n="index.beratung.p2">Unser Team ist interdisziplinär aufgestellt, um einen umfassenden und individuellen Beratungsansatz für Ihre Projekte zu verfolgen. In komplexen Vorhaben unterstützen wir Sie dabei, Potenziale zu erkennen und diese strategisch anzugehen.</p>
+            <p data-i18n="index.beratung.p3">Wir schaffen Mehrwert für Ihr Projekt, indem wir das technische Fachwissen aus verschiedenen Bereichen unseres Unternehmens einbringen.</p>
+            <p data-i18n="index.beratung.p4">Dank unserer vielfältigen Leistungspalette können wir den Beratungsansatz für Sie anpassen und so den Erfolg Ihres Projekts sicherstellen.</p>
+          </div>
+          <a href="#contact" class="content-cta" data-i18n="index.beratung.cta">Kontaktieren Sie uns jetzt →</a>
+        </div>
+        <div class="content-img-wrap">
+          <img src="./assets/images/team-meeting.webp" alt="Beratungsgespräch im Team — Alan Projektmanagement GmbH" width="1344" height="896" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beratung — Leistungsliste -->
+  <section class="section section--alt" aria-label="Leistungen in der Beratung">
+    <div class="container">
+      <div class="leistungen-cols reveal">
+        <div>
+          <h3 class="leistungen-col-title" data-i18n="index.beratung.list1.title">Leistungen in der Beratung</h3>
+          <ul class="leistungen-list">
+            <li data-i18n="index.beratung.list1.li1">Projektabwicklungsstrategien</li>
+            <li data-i18n="index.beratung.list1.li2">Technische Due Diligence (TDD)</li>
+            <li data-i18n="index.beratung.list1.li3">Environmental Due Diligence (EDD)</li>
+            <li data-i18n="index.beratung.list1.li4">Ankaufsuntersuchungen</li>
+            <li data-i18n="index.beratung.list1.li5">Grundstückssuche und Unterstützung in der Kaufabwicklung</li>
+            <li data-i18n="index.beratung.list1.li6">Untersuchungen zur Wirtschaftlichkeit</li>
+            <li data-i18n="index.beratung.list1.li7">Machbarkeitsstudien</li>
+            <li data-i18n="index.beratung.list1.li8">Workshop / Moderation</li>
+            <li data-i18n="index.beratung.list1.li9">Vollumfängliche Betreuung von Planerauswahlverfahren</li>
+            <li data-i18n="index.beratung.list1.li10">Begleitung Bebauungsplanverfahren</li>
+            <li data-i18n="index.beratung.list1.li11">Volumenstudien</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="leistungen-col-title" data-i18n="index.beratung.list2.title">Zudem bieten wir Ihnen mit Unterstützung unserer externen Partner</h3>
+          <ul class="leistungen-list">
+            <li data-i18n="index.beratung.list2.li1">Architektonische Konzeptstudien</li>
+            <li data-i18n="index.beratung.list2.li2">Fördermittelberatung</li>
+          </ul>
+          <p class="leistungen-cta-text" data-i18n="index.leistungen.cta.text">Möchten auch Sie von unserer Erfahrung und Leidenschaft profitieren?</p>
+          <a href="#contact" class="btn-primary" data-i18n="index.leistungen.cta.btn">Kontaktieren Sie uns jetzt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJEKTMANAGEMENT DETAIL ═══════════════════════════ -->
+  <section class="section" id="projektmanagement-detail" aria-labelledby="pm-title">
+    <div class="container">
+      <div class="content-split content-split--reverse reveal">
+        <div class="content-img-wrap">
+          <picture>
+            <source srcset="./assets/images/architekturplaene.webp" type="image/webp">
+            <img src="./assets/images/architekturplaene.jpg" alt="Projektmanagement — Team bei der Bauplanung" width="730" height="484" loading="lazy">
+          </picture>
+        </div>
+        <div>
+          <p class="section-label" data-i18n="index.pm.label">Projektmanagement</p>
+          <h2 class="content-title" id="pm-title" data-i18n="index.pm.title">Bauprojekte sind äusserst komplex.</h2>
+          <div class="content-body">
+            <p data-i18n="index.pm.p1">Eine reibungslose Projektabwicklung erfordert ein effektives Projektmanagement, das Fähigkeiten in Planung, Organisation, Kommunikation und Überwachung vereint. Aus diesem Grund setzen wir auf erfahrene Teams, die nach Erarbeitung individueller Projektprozesse eng mit dem Auftraggeber zusammenarbeiten, um die Projekte erfolgreich umzusetzen.</p>
+            <p data-i18n="index.pm.p2">Wir überprüfen, optimieren und steuern kontinuierlich die Organisation, Kosten, Qualität und Termine im Projekt. Dabei nutzen wir etablierte Tools und Softwareprogramme für das Kosten- und Vertragscontrolling sowie zur Mängelverfolgung und Baustellendokumentation.</p>
+            <p data-i18n="index.pm.p3">Ein maßgeschneidertes Berichtswesen ist selbstverständlich in den Projektalltag integriert, um die Leistung zu steigern. Projektspezifische Herausforderungen sind für uns Anreize, denen wir mit Blick auf die definierten Ziele begegnen.</p>
+            <p data-i18n="index.pm.p4">Ob es um einzelne Gebäude oder komplexe Quartiersentwicklungen geht, wir verfügen über die erforderliche Erfahrung, um eine Vielzahl von Projekttypen erfolgreich zu steuern. Dabei unterstützen wir sowohl private als auch öffentliche Auftraggeber. Insbesondere bei Wohnungsbau-, Verwaltungs-, Hotel-, Schul-, Einzelhandels- und Industrieprojekten vereinen wir umfangreiche Kompetenzen unter einem Dach.</p>
+            <p data-i18n="index.pm.p5">Komplexität stellt für uns keine Schwierigkeit dar — sie ist unsere Leidenschaft. Diese Leidenschaft ermöglicht es uns, die Herausforderungen anzunehmen und unsere Projekte erfolgreich mit individuellen und innovativen Lösungen abzuschließen.</p>
+            <p data-i18n="index.pm.p6">Durch die interdisziplinäre Einbindung unserer internen Geschäftsbereiche im Baumanagement und in der Beratung sind wir in der Lage, sämtlichen Anforderungen, die sich aus den Projekten ergeben, mit umfassendem Fachwissen zu begegnen.</p>
+          </div>
+          <a href="#contact" class="content-cta" data-i18n="index.beratung.cta">Kontaktieren Sie uns jetzt →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projektmanagement — Infografik -->
+  <section class="section section--alt" aria-label="Projektmanagement Struktur">
+    <div class="container">
+      <div class="infografik-wrap reveal">
+        <picture>
+          <source srcset="./assets/images/projektmanagement-infografik.webp" type="image/webp">
+          <img class="infografik-img" src="./assets/images/projektmanagement-infografik.jpg" alt="Projektmanagement Organigramm: Projektleitung — Projektsteuerung — Architekt, Fachplaner, Baufirma" width="796" height="629" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projektmanagement — Leistungsliste -->
+  <section class="section" aria-label="Leistungen im Projektmanagement">
+    <div class="container">
+      <div class="leistungen-cols reveal">
+        <div>
+          <h3 class="leistungen-col-title" data-i18n="index.pm.list1.title">Leistungen im Projektmanagement</h3>
+          <ul class="leistungen-list">
+            <li>
+              <span data-i18n="index.pm.list1.li1">Projektsteuerung gemäß den fünf AHO-Projektstufen — angepasste Teilleistungen aus:</span>
+              <ul class="leistungen-list leistungen-list--sub">
+                <li data-i18n="index.pm.list1.sub.li1">Organisation, Information, Koordination und Dokumentation</li>
+                <li data-i18n="index.pm.list1.sub.li2">Qualitäten und Quantitäten</li>
+                <li data-i18n="index.pm.list1.sub.li3">Kosten und Finanzierung</li>
+                <li data-i18n="index.pm.list1.sub.li4">Termine, Kapazitäten und Logistik</li>
+                <li data-i18n="index.pm.list1.sub.li5">Verträge und Versicherungen</li>
+              </ul>
+            </li>
+            <li data-i18n="index.pm.list1.li2">Projektleitung nach AHO — Übernahme der delegierbaren Verantwortungsbereiche für die Führung des Projekts in Linienfunktion</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="leistungen-col-title" data-i18n="index.pm.list2.title">Zudem bieten wir Ihnen die folgenden weiteren Leistungen:</h3>
+          <ul class="leistungen-list">
+            <li data-i18n="index.pm.list2.li1">Multiprojektmanagement</li>
+            <li data-i18n="index.pm.list2.li2">Projektcontrolling</li>
+            <li data-i18n="index.pm.list2.li3">Projektmonitoring / Bankenreporting</li>
+            <li data-i18n="index.pm.list2.li4">Value Engineering</li>
+            <li data-i18n="index.pm.list2.li5">Stakeholdermanagement</li>
+            <li data-i18n="index.pm.list2.li6">GU – Monitoring und Fertigstellungsmonitoring</li>
+            <li data-i18n="index.pm.list2.li7">Riskmanagement und Troubleshooting</li>
+            <li data-i18n="index.pm.list2.li8">Nutzerprojektmanagement</li>
+            <li data-i18n="index.pm.list2.li9">Mieterkoordination</li>
+            <li data-i18n="index.pm.list2.li10">Inbetriebnahmemanagement</li>
+            <li data-i18n="index.pm.list2.li11">Projektsteuerung von städtebaulichen Leistungen</li>
+          </ul>
+          <p class="leistungen-cta-text" data-i18n="index.leistungen.cta.text">Möchten auch Sie von unserer Erfahrung und Leidenschaft profitieren?</p>
+          <a href="#contact" class="btn-primary" data-i18n="index.leistungen.cta.btn">Kontaktieren Sie uns jetzt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ BAUMANAGEMENT ═══════════════════════════ -->
+  <section class="section section--alt" id="baumanagement" aria-labelledby="bm-title">
+    <div class="container">
+      <div class="content-split reveal">
+        <div>
+          <p class="section-label" data-i18n="index.bm.label">Baumanagement</p>
+          <h2 class="content-title" id="bm-title" data-i18n="index.bm.title">Bauprojekte werden vor Ort realisiert, nicht im Büro.</h2>
+          <div class="content-body">
+            <p data-i18n="index.bm.p1">Im Baumanagement agieren wir als Vermittler zwischen Auftraggeber und Auftragnehmer. Wir übernehmen die Überwachung des Bauprojekts und sind verantwortlich für die termingerechte und kostentreue Umsetzung mit der geforderten Qualität.</p>
+            <p data-i18n="index.bm.p2">Für spezielle Aufgaben stehen Ihnen unsere Experten zur Verfügung, die je nach Bedarf für die Schwerpunkte in der Bearbeitung Ihres Projekts eingesetzt werden können.</p>
+            <p data-i18n="index.bm.p3">Wir koordinieren alle fachlich Beteiligten auf und neben der Baustelle. Zu unseren Aufgaben gehört neben der Koordination und Abstimmung der Planungsziele und Termine auch die Überwachung der Baurealisierung vor Ort.</p>
+            <p data-i18n="index.bm.p4">Wir sind in den unterschiedlichsten Bereichen des Bauens sicher unterwegs. Vom Bau von Wohnhäusern bis hin zu Hotels, von Bauarbeiten an bestehenden Gebäuden bis zur Revitalisierung, von Verwaltungsgebäuden bis hin zu hochkomplexen Fabrikations- und Entwicklungsgebäuden.</p>
+            <p data-i18n="index.bm.p5">Zögern Sie nicht, uns anzusprechen. Wir sind für Sie da.</p>
+          </div>
+          <a href="#contact" class="content-cta" data-i18n="index.beratung.cta">Kontaktieren Sie uns jetzt →</a>
+        </div>
+        <div class="content-img-wrap">
+          <picture>
+            <source srcset="./assets/images/bauarbeiter.webp" type="image/webp">
+            <img src="./assets/images/bauarbeiter.jpg" alt="Baumanagement — Fachleute auf der Baustelle bei der Planung" width="1999" height="1333" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Baumanagement — Leistungsliste -->
+  <section class="section" aria-label="Leistungen im Baumanagement">
+    <div class="container">
+      <div class="leistungen-cols reveal">
+        <div>
+          <h3 class="leistungen-col-title" data-i18n="index.bm.list.title">Leistungen im Baumanagement</h3>
+          <ul class="leistungen-list">
+            <li data-i18n="index.bm.list.li1">Unterstützung bei der Erstellung von Ausschreibungen</li>
+            <li data-i18n="index.bm.list.li2">Unterstützung und technische Begleitung im Vergabeprozess</li>
+            <li data-i18n="index.bm.list.li3">Ausführungsterminplanung</li>
+            <li data-i18n="index.bm.list.li4">Berücksichtigung von Interimszuständen, Anforderungen an Umbauten im laufenden Betrieb</li>
+            <li data-i18n="index.bm.list.li5">Qualitätsüberwachung und Abgleich der Soll-Ist-Zustände</li>
+            <li data-i18n="index.bm.list.li6">Objektüberwachung im Sinne der LPH 8 HOAI</li>
+            <li data-i18n="index.bm.list.li7">Technische Gebäudebeurteilungen, Technical Due Diligence</li>
+            <li data-i18n="index.bm.list.li8">Moderierung, Sanierung, Revitalisierung</li>
+            <li data-i18n="index.bm.list.li9">Digitale Mängelerfassung auf der Baustelle</li>
+            <li data-i18n="index.bm.list.li10">Baulogistikkonzepte</li>
+          </ul>
+        </div>
+        <div>
+          <p class="leistungen-cta-text" data-i18n="index.leistungen.cta.text">Möchten auch Sie von unserer Erfahrung und Leidenschaft profitieren?</p>
+          <a href="#contact" class="btn-primary" data-i18n="index.leistungen.cta.btn">Kontaktieren Sie uns jetzt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CTA CALLOUT ═══════════════════════════ -->
+  <section class="cta-callout" aria-label="Kontaktaufruf">
+    <div class="container">
+      <h2 data-i18n="index.cta.callout.title">Haben Sie Fragen?</h2>
+      <p data-i18n="index.cta.callout.sub">Wir sind für Sie da.</p>
+      <a href="#contact" class="btn-white" data-i18n="index.cta.callout.btn">Kontakt aufnehmen →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+  <section id="projects" class="section section--alt" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <p class="section-label" data-i18n="projects.label">Referenzen</p>
+          <h2 class="section-title" id="projects-title" data-i18n-html="projects.title">Ausgewählte<br>Projekte.</h2>
+        </div>
+        <a href="./projekte.html" class="btn-primary" data-i18n="projects.cta">Alle Projekte →</a>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Projekt 1 -->
+        <div class="project-card reveal"
+             data-lightbox="./assets/images/projekt-residenz-am-park.jpg"
+             data-lightbox-alt="Residenz am Park"
+             role="button" tabindex="0" aria-label="Projekt: Residenz am Park — Vollbild öffnen">
+          <picture>
+            <source srcset="./assets/images/projekt-residenz-am-park.webp" type="image/webp">
+            <img class="project-img" src="./assets/images/projekt-residenz-am-park.jpg" alt="Residenz am Park — Wohnbauprojekt" width="612" height="395" loading="lazy">
+          </picture>
+          <div class="project-card-content">
+            <h3 class="project-name">Residenz am Park</h3>
+            <div class="project-tags">
+              <span class="project-tag">Wohnungsbau</span>
+              <span class="project-tag">Projektmanagement</span>
+            </div>
+            <a href="./projekte.html" class="service-link">Mehr erfahren <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <!-- Projekt 2 -->
+        <div class="project-card reveal"
+             data-lightbox="./assets/images/projekt-buerozentrum-techpark.jpg"
+             data-lightbox-alt="Bürozentrum Techpark"
+             role="button" tabindex="0" aria-label="Projekt: Bürozentrum Techpark — Vollbild öffnen">
+          <picture>
+            <source srcset="./assets/images/projekt-buerozentrum-techpark.webp" type="image/webp">
+            <img class="project-img" src="./assets/images/projekt-buerozentrum-techpark.jpg" alt="Bürozentrum Techpark — Gewerbebau" width="612" height="408" loading="lazy">
+          </picture>
+          <div class="project-card-content">
+            <h3 class="project-name">Bürozentrum Techpark</h3>
+            <div class="project-tags">
+              <span class="project-tag">Gewerbebau</span>
+              <span class="project-tag">Hochbau</span>
+            </div>
+            <a href="./projekte.html" class="service-link">Mehr erfahren <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <!-- Projekt 3 -->
+        <div class="project-card reveal"
+             data-lightbox="./assets/images/projekt-mfh-berlin.jpg"
+             data-lightbox-alt="MFH Berlin-Neukölln"
+             role="button" tabindex="0" aria-label="Projekt: MFH Berlin-Neukölln — Vollbild öffnen">
+          <picture>
+            <source srcset="./assets/images/projekt-mfh-berlin.webp" type="image/webp">
+            <img class="project-img" src="./assets/images/projekt-mfh-berlin.jpg" alt="MFH Berlin-Neukölln — Mehrfamilienhaus" width="1081" height="563" loading="lazy">
+          </picture>
+          <div class="project-card-content">
+            <h3 class="project-name">MFH Berlin-Neukölln</h3>
+            <div class="project-tags">
+              <span class="project-tag">Mehrfamilienhaus</span>
+              <span class="project-tag">Hochbau</span>
+            </div>
+            <a href="./projekte.html" class="service-link">Mehr erfahren <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal" style="aspect-ratio:20/9">
+          <picture>
+            <source srcset="./assets/images/besprechungsraum.webp" type="image/webp">
+            <img src="./assets/images/besprechungsraum.jpg" alt="Besprechungsraum der Alan Projektmanagement GmbH" width="1200" height="543" loading="lazy">
+          </picture>
+          <div class="about-img-accent" aria-hidden="true"></div>
+        </div>
+
+        <div class="reveal">
+          <p class="section-label" data-i18n="about.label">Über uns</p>
+          <h2 class="about-title" id="about-title" data-i18n-html="about.title">Qualität aus<br>Überzeugung.</h2>
+          <p class="about-text" data-i18n="about.p1">
+            Die Alan Projektmanagement GmbH ist Ihr zuverlässiger Partner für anspruchsvolle Bauprojekte in Berlin, Schönefeld und deutschlandweit. Unser interdisziplinäres Team vereint tiefes Fachwissen in Projektmanagement, Bauausführung und Beratung.
+          </p>
+          <p class="about-text" data-i18n="about.p2">
+            Komplexität stellt für uns keine Schwierigkeit dar — sie ist unsere Leidenschaft. Mit ingenieurtechnischer Präzision und unternehmerischem Denken begleiten wir Ihre Projekte vom ersten Konzept bis zur finalen Übergabe.
+          </p>
+
+          <div class="about-usps">
+            <div class="usp-item">
+              <span class="usp-label" data-i18n="about.usp.standort.label">Standort</span>
+              <span class="usp-value" data-i18n="about.usp.standort.value">Berlin &amp; Schönefeld</span>
+            </div>
+            <div class="usp-item">
+              <span class="usp-label" data-i18n="about.usp.einsatz.label">Einsatzgebiet</span>
+              <span class="usp-value" data-i18n="about.usp.einsatz.value">Deutschlandweit</span>
+            </div>
+            <div class="usp-item">
+              <span class="usp-label" data-i18n="about.usp.kammer.label">Kammer</span>
+              <span class="usp-value" data-i18n="about.usp.kammer.value">IHK Cottbus</span>
+            </div>
+            <div class="usp-item">
+              <span class="usp-label" data-i18n="about.usp.leistungen.label">Leistungen</span>
+              <span class="usp-value" data-i18n="about.usp.leistungen.value">3 Kernbereiche</span>
+            </div>
+          </div>
+
+          <a href="./leistungen.html" class="btn-primary" data-i18n="about.cta">Leistungen entdecken →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section id="contact" class="section section--alt" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="section-label" data-i18n="contact.label">Kontakt</p>
+          <h2 class="contact-title" id="contact-title" data-i18n-html="contact.title">Haben Sie<br>ein Projekt?</h2>
+          <p class="contact-sub" data-i18n="contact.sub">
+            Sprechen Sie uns an — wir antworten innerhalb von 24 Stunden und besprechen gemeinsam, wie wir Ihr Vorhaben optimal umsetzen können.
+          </p>
+
+          <div class="contact-person reveal">
+            <!-- TODO: Replace bueroraum.jpg/.webp with portrait photo when client provides it -->
+            <picture>
+              <source srcset="./assets/images/bueroraum.webp" type="image/webp">
+              <img class="contact-person-photo"
+                   src="./assets/images/bueroraum.jpg"
+                   alt="Mehmet Emre Alan, Geschäftsführer Alan Projektmanagement GmbH"
+                   width="88" height="88" loading="lazy">
+            </picture>
+            <div class="contact-person-info">
+              <p class="contact-person-role" data-i18n="contact.person.role">Ihr Ansprechpartner</p>
+              <p class="contact-person-name">Mehmet Emre Alan</p>
+              <p class="contact-person-title" data-i18n="contact.person.title">Geschäftsführer</p>
+              <a class="contact-person-phone" href="tel:+4930258141642">+49 30 258 141 642</a>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="contact-info-icon" aria-hidden="true">📍</span>
+              <div class="contact-info-text">
+                <strong>Adresse</strong>
+                Willy-Brandt-Platz 2, 12529 Schönefeld
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon" aria-hidden="true">📞</span>
+              <div class="contact-info-text">
+                <strong>Telefon</strong>
+                <a href="tel:+4930258141642">+49 (30) 258 141 642</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon" aria-hidden="true">✉️</span>
+              <div class="contact-info-text">
+                <strong>E-Mail</strong>
+                <a href="mailto:info@alanprojekt.de">info@alanprojekt.de</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon" aria-hidden="true">🔗</span>
+              <div class="contact-info-text">
+                <strong>Social Media</strong>
+                <a href="https://www.linkedin.com/company/alan-consulting-bau-projektmanagement-gmbh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                &nbsp;·&nbsp;
+                <a href="https://www.xing.com/pages/alan-projektmanagement-gmbh/about_us" target="_blank" rel="noopener noreferrer">XING</a>
+                &nbsp;·&nbsp;
+                <a href="https://www.instagram.com/alaninteriordesign/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <form class="contact-form" id="contact-form" method="post" action="https://api.web3forms.com/submit" autocomplete="on" novalidate>
+            <!-- Web3Forms — Access Key von https://web3forms.com eintragen -->
+            <input type="hidden" name="access_key" value="DEIN_WEB3FORMS_KEY_HIER">
+            <input type="hidden" name="subject" value="Neue Projektanfrage — ALANBAU">
+            <input type="hidden" name="from_name" value="ALANBAU Website">
+            <input type="hidden" name="redirect" value="false">
+            <!-- Honeypot Spam-Schutz -->
+            <input type="text" name="botcheck" style="display:none!important" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first_name" data-i18n="form.firstname">Vorname *</label>
+                <input class="form-input" type="text" id="first_name" name="first_name" placeholder="Max" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last_name" data-i18n="form.lastname">Nachname</label>
+                <input class="form-input" type="text" id="last_name" name="last_name" placeholder="Mustermann" autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email" data-i18n="form.email">E-Mail *</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="max@mustermann.de" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Telefon</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+49 30 …" autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="projektart" data-i18n="form.projektart">Projektart</label>
+              <select class="form-select" id="projektart" name="projektart">
+                <option value="" data-i18n="form.position.placeholder">Bitte wählen …</option>
+                <option value="projektmanagement" data-i18n="form.projektart.pm">Bau-Projektmanagement</option>
+                <option value="wohnungsbau" data-i18n="form.projektart.wohnungsbau">Wohnungsbau</option>
+                <option value="gewerbebau" data-i18n="form.projektart.gewerbebau">Gewerbebau</option>
+                <option value="tiefbau" data-i18n="form.projektart.tiefbau">Tiefbau &amp; Erschließung</option>
+                <option value="renovierung" data-i18n="form.projektart.renovierung">Umbau &amp; Renovierung</option>
+                <option value="beratung" data-i18n="form.projektart.beratung">Beratung / Due Diligence</option>
+                <option value="sonstiges" data-i18n="form.projektart.sonstiges">Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message" data-i18n="form.message">Nachricht *</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Kurze Beschreibung Ihres Projekts — Standort, Umfang, Zeitplan …" required></textarea>
+            </div>
+
+            <div class="form-submit-wrap">
+              <button type="submit" class="form-submit" data-i18n="form.submit">Anfrage senden →</button>
+              <div class="form-success-msg" id="form-success" role="alert" data-i18n="form.success">
+                ✓ Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+              </div>
+              <div class="form-error-msg" id="form-error" role="alert">
+                Leider ist ein Fehler aufgetreten. Bitte schreiben Sie uns direkt an
+                <a href="mailto:info@alanprojekt.de">info@alanprojekt.de</a>.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="nav-logo" aria-label="ALANBAU Startseite">
+            <img src="./assets/images/company-logo.png" alt="Alan Projektmanagement GmbH" width="40" height="40" loading="lazy">
+            <span class="nav-logo-text" style="display:none">ALAN<span class="red">BAU</span></span>
+          </a>
+          <p data-i18n="footer.tagline">Ihr Partner für Bau-Projektmanagement, Hoch- &amp; Tiefbau und Baudienstleistungen in Berlin und deutschlandweit.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/alan-consulting-bau-projektmanagement-gmbh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://www.xing.com/pages/alan-projektmanagement-gmbh/about_us" target="_blank" rel="noopener noreferrer" aria-label="XING">x</a>
+            <a href="https://www.instagram.com/alaninteriordesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">&#x1F4F7;</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col.leistungen">Leistungen</h5>
+          <ul>
+            <li><a href="./leistungen.html#projektmanagement" data-i18n="footer.link.projektmanagement">Bau-Projektmanagement</a></li>
+            <li><a href="./leistungen.html#hochtiefbau" data-i18n="footer.link.hochtiefbau">Hoch- &amp; Tiefbau</a></li>
+            <li><a href="./leistungen.html#baudienstleistungen" data-i18n="footer.link.baudienstleistungen">Baudienstleistungen</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col.unternehmen">Unternehmen</h5>
+          <ul>
+            <li><a href="./ueber-uns.html" data-i18n="footer.link.ueber-uns">Über uns</a></li>
+            <li><a href="./projekte.html" data-i18n="footer.link.projekte">Projekte</a></li>
+            <li><a href="./karriere.html" data-i18n="footer.link.karriere">Karriere</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col.themen">Themen &amp; Einblicke</h5>
+          <ul>
+            <li><a href="./branchen.html" data-i18n="footer.link.branchen">Branchen &amp; Märkte</a></li>
+            <li><a href="./nachhaltigkeit.html" data-i18n="footer.link.nachhaltigkeit">Nachhaltigkeit</a></li>
+            <li><a href="./lean.html" data-i18n="footer.link.lean">LEAN Management</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Kontakt</h5>
+          <ul>
+            <li><a href="tel:+4930258141642">+49 (30) 258 141 642</a></li>
+            <li><a href="mailto:info@alanprojekt.de">info@alanprojekt.de</a></li>
+            <li><a href="https://maps.google.com/?q=Willy-Brandt-Platz+2,+12529+Schönefeld" target="_blank" rel="noopener noreferrer">Schönefeld, Brandenburg</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-certs" aria-label="Zertifikate und Mitgliedschaften">
+        <div class="footer-cert-item">
+          <img src="./assets/images/zertifikat-ihk-cottbus.png" alt="IHK Cottbus Mitglied" width="80" height="40" loading="lazy">
+          <span>IHK Cottbus</span>
+        </div>
+        <div class="footer-cert-item">
+          <img src="./assets/images/zertifikat-architektenkammer.png" alt="Architektenkammer Berlin" width="80" height="40" loading="lazy">
+          <span>Architektenkammer Berlin</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2025 Alan Projektmanagement GmbH · HRB 251074 B</p>
+        <div class="footer-bottom-links">
+          <a href="./impressum.html" data-i18n="footer.link.impressum">Impressum</a>
+          <a href="./datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutz</a>
+          <a href="./agb.html" data-i18n="footer.link.agb">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════ SERVICE MODAL ═══════════════════════════ -->
+  <div class="svc-modal-overlay" id="svc-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="svc-title">
+    <div class="svc-modal">
+      <button class="svc-modal-close" id="svc-modal-close" aria-label="Schließen">&#x2715;</button>
+      <p class="svc-modal-num" id="svc-num"></p>
+      <span class="svc-modal-icon" id="svc-icon" aria-hidden="true"></span>
+      <h2 class="svc-modal-title" id="svc-title"></h2>
+      <p class="svc-modal-lead" id="svc-lead"></p>
+      <ul class="svc-modal-list" id="svc-list"></ul>
+      <a href="#contact" class="svc-modal-cta" data-close-modal-and-scroll="contact">
+        Anfrage stellen →
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ LIGHTBOX ═══════════════════════════ -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Schließen">&#x2715;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- Scripts -->
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>
